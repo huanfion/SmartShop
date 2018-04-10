@@ -32,5 +32,26 @@ namespace SmartShop.ShopCartApp
         {
             return string.IsNullOrWhiteSpace(tag)?0: _shopcartRepository.Count(s => s.CookieTag== tag);
         }
+        /// <summary>
+        /// 获取指定购物车中指定的商品
+        /// </summary>
+        /// <param name="memberId"></param>
+        /// <param name="productId"></param>
+        /// <returns></returns>
+        public ShopCart GetCartByProductId(int memberId, int productId)
+        {
+            return _shopcartRepository.GetAll().Where(a => a.MemberId == memberId).FirstOrDefault();
+        }
+        /// <summary>
+        /// 获取指定购物车中指定的商品
+        /// </summary>
+        /// <param name="memberId"></param>
+        /// <param name="productId"></param>
+        /// <returns></returns>
+        public ShopCart GetCartByProductId(string tag, int productId)
+        {
+            return _shopcartRepository.GetAll().Where(a => a.CookieTag == tag).FirstOrDefault();
+        }
+
     }
 }

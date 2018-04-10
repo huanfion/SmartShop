@@ -15,5 +15,11 @@ namespace SmartShop.ShopProductApp
         /// </summary>
         /// <returns></returns>
         List<ShopProduct> GetAllList();
+        /// <summary>
+        /// 根据id查找商品信息
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        ShopProduct GetProductById(int Id);
     }
 }

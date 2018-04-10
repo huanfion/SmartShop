@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services;
+using SmartShop.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,5 +22,19 @@ namespace SmartShop.ShopCartApp
         /// <param name="tag"></param>
         /// <returns></returns>
         int GetCartCountByCookie(string tag);
+        /// <summary>
+        /// 获取指定购物车中指定的商品
+        /// </summary>
+        /// <param name="memberId"></param>
+        /// <param name="productId"></param>
+        /// <returns></returns>
+        ShopCart GetCartByProductId(int memberId, int productId);
+        /// <summary>
+        /// 获取指定购物车中指定的商品
+        /// </summary>
+        /// <param name="tag"></param>
+        /// <param name="productId"></param>
+        /// <returns></returns>
+        ShopCart GetCartByProductId(string tag, int productId);
     }
 }

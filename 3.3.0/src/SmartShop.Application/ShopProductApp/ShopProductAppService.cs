@@ -30,5 +30,15 @@ namespace SmartShop.ShopProductApp
         {
             return _shopProductRepository.GetAllList(p=>p.IsRecommend==1);
         }
+
+        /// <summary>
+        /// 根据id查找商品信息
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public ShopProduct GetProductById(int Id)
+        {
+            return _shopProductRepository.Get(Id);
+        }
     }
 }

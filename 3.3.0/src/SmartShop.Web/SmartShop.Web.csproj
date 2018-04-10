@@ -2883,6 +2883,7 @@
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Controllers\TenantsController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Models\Account\TenantChangeModalViewModel.cs" />
@@ -3029,6 +3030,8 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\Shop\Index.cshtml" />
+    <Content Include="Views\Shared\_ShopLayout.cshtml" />
+    <Content Include="Views\Shop\product.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3060,6 +3063,7 @@
     <Folder Include="Upload\attached\image\cake\A\" />
     <Folder Include="Upload\attached\image\coffee\A\" />
     <Folder Include="Upload\attached\image\drink\A\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

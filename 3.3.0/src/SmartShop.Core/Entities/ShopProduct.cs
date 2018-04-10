@@ -232,27 +232,27 @@ namespace SmartShop.Core.Entities{
         {
             get; 
             set; 
-        } 
-         
-           
+        }
+
+
         /// <summary>
         /// Summary
         /// </summary>
         public virtual string Summary
         {
-            get; 
-            set; 
-        } 
-         
-           
+            get;
+            set;
+        } = string.Empty;
+
+
         /// <summary>
         /// Detail
         /// </summary>
         public virtual string Detail
         {
-            get; 
-            set; 
-        } 
+            get;
+            set;
+        } = string.Empty;
          
            
         /// <summary>
