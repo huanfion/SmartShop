@@ -10,5 +10,6 @@ namespace SmartShop.IRepositories
 {
     public interface IShopCartRepositoy:IRepository<ShopCart>
     {
+        
     }
 }
